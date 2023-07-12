@@ -26,3 +26,5 @@ target/
 ### IntelliJ IDEA ###
 .idea
 *.iws
+/.idea/
+/target/

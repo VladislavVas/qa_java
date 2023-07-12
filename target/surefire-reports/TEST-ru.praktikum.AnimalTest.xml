@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="ru.praktikum.AnimalTest" time="0" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="ru.praktikum.AnimalTest" time="0.004" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.1.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -65,7 +65,7 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="ru.praktikum.AnimalTest" name="getFamilyTest" time="0"/>
-  <testcase classname="ru.praktikum.AnimalTest" name="getFoodThrowExceptionTest" time="0"/>
+  <testcase classname="ru.praktikum.AnimalTest" name="getFoodThrowExceptionTest" time="0.004"/>
   <testcase classname="ru.praktikum.AnimalTest" name="getFoodParamsTest(Травоядное, [Трава, Различные растения]) [0]" time="0"/>
   <testcase classname="ru.praktikum.AnimalTest" name="getFoodParamsTest(Хищник, [Животные, Птицы, Рыба]) [1]" time="0"/>
 </testsuite>

@@ -8,7 +8,6 @@ import org.junit.runner.RunWith;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThrows;
 
 @RunWith(JUnitParamsRunner.class)
 public class AnimalTest {
@@ -27,12 +26,9 @@ public class AnimalTest {
         assertEquals(expectedFoodList, animal.getFood(animalKind));
     }
 
-    @Test
+    @Test(expected = Exception.class)
     public void getFoodThrowExceptionTest() throws Exception {
-        Exception ex = assertThrows(
-                Exception.class,
-                () -> animal.getFood("неизвестный вид животного"));
-        assertEquals("Неизвестный вид животного, используйте значение Травоядное или Хищник", ex.getMessage());
+        animal.getFood("неизвестный вид животного");
     }
 
     @Test

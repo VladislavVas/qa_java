@@ -2,7 +2,6 @@ package ru.praktikum;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.List;
@@ -12,8 +11,7 @@ import static org.junit.Assert.assertEquals;
 @RunWith(MockitoJUnitRunner.class)
 public class FelineTest {
 
-    @Spy
-    private Feline feline;
+    private Feline feline = new Feline();
 
     @Test
     public void eatMeatTest() throws Exception {
